@@ -1,0 +1,59 @@
+Bonus Features
+
+# 1. Algorithm Choice Mechanism
+
+Now tries to read configuration file (optionally):
+`algorithm_types.txt` in the directory of the program executable
+expects value `chasing`, `rotating`, `interactive`.
+`chasing`: the default algorithm, chases and shoots enemy tanks
+`rotating`: just rotates in same place
+`interactive`: receives input from user
+
+# 2. Interactive Algorithm Mode
+
+Extended to new API + to multi-tank scenarios
+
+Format:
+```
+<player 1 algorithm type>
+<player 2 algorithm type>
+```
+
+This game mode asks for user input every game step
+
+Input Keys for providing action to the algorithm:
+- w: MoveForward,
+- s: MoveBackward,
+- q: RotateLeft45,
+- a: RotateLeft90,
+- e: RotateRight45,
+- d: RotateRight90,
+- k: Shoot
+- i: BattleInfo
+
+
+# 3. Output to debug file with full game text rendering
+
+Pass parameter:
+`--write_deebug_file`
+will write outpu to file:
+`<debug>_<input_board_name>.txt`
+
+Will show the full board happenings on every step.
+
+# 4. Automatic testing
+
+- checks edge cases for I/O access, input board formats, game handling of actions, etc.
+- checks algorithm's performance
+
+Step 1: Generating test files script:
+```
+bash test/generate_algorithm_tests.py
+```
+
+Step 2: Run test script:
+```
+bash test/test_runner.sh
+```
+
+

@@ -1,0 +1,11 @@
+GetBattleInfo, GetBattleInfo, GetBattleInfo, GetBattleInfo
+RotateLeft90, RotateLeft90, RotateLeft90, RotateLeft90
+GetBattleInfo, GetBattleInfo, GetBattleInfo, GetBattleInfo
+Shoot, Shoot, Shoot, Shoot
+GetBattleInfo, GetBattleInfo, GetBattleInfo, GetBattleInfo
+MoveForward, MoveForward, MoveForward, MoveForward
+GetBattleInfo, GetBattleInfo, GetBattleInfo, GetBattleInfo
+Shoot, Shoot, Shoot, Shoot
+GetBattleInfo, GetBattleInfo, GetBattleInfo, GetBattleInfo
+MoveForward (killed), MoveForward (killed), MoveForward (killed), MoveForward (killed)
+Tie, both players have zero tanks
